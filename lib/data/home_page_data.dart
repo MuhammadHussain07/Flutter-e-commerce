@@ -110,19 +110,20 @@ List<SingleProductModel> singleProductData = [
 ////////////////////////////// Cloths.............
 List<SingleProductModel> clothsData = [
   SingleProductModel(
-      productImage:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzlmQojw0tqNKQx7GBiQhFj18-rOg5weHhQ&usqp=CAU',
-      productModel: 'Short',
-      productName: 'Textured epic shorts',
-      productOldPrice: 50,
-      productPrice: 44,
-      productFourImage:
-          'https://reebok.bynder.com/transform/15d3a9a5-b826-4e83-9855-f3d46f2f9a67/100054209_D1_Model_eCom-tif?io=transform:fit,width:700&quality=100',
-      productSecondImage:
-'https://reebok.bynder.com/transform/66521f6e-2c66-488f-92ee-8668e9000fb0/100054209_B_Model_eCom-tif?io=transform:fit,width:700&quality=100',      productThirdImage:
-'https://reebok.bynder.com/transform/ab9c4aa6-9ffb-44ad-a6a6-4dcc117dcd15/100054209_Sid_Model_eCom-tif?io=transform:fit,width:700&quality=100', 
+    productImage:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzlmQojw0tqNKQx7GBiQhFj18-rOg5weHhQ&usqp=CAU',
+    productModel: 'Short',
+    productName: 'Textured epic shorts',
+    productOldPrice: 50,
+    productPrice: 44,
+    productFourImage:
+        'https://reebok.bynder.com/transform/15d3a9a5-b826-4e83-9855-f3d46f2f9a67/100054209_D1_Model_eCom-tif?io=transform:fit,width:700&quality=100',
+    productSecondImage:
+        'https://reebok.bynder.com/transform/66521f6e-2c66-488f-92ee-8668e9000fb0/100054209_B_Model_eCom-tif?io=transform:fit,width:700&quality=100',
+    productThirdImage:
+        'https://reebok.bynder.com/transform/ab9c4aa6-9ffb-44ad-a6a6-4dcc117dcd15/100054209_Sid_Model_eCom-tif?io=transform:fit,width:700&quality=100',
   ),
- SingleProductModel(
+  SingleProductModel(
       productImage:
           'https://assets.reebok.com/images/w_600,f_auto,q_auto/00990102d5174b06aca2aae7017ceef9_9366/Classics_Twin_Vector_Track_Jacket_Blue_FJ3172_04_standard.jpg',
       productModel: 'jacket',

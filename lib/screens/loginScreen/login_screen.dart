@@ -41,8 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
-                child: MyButtonWidget('Sign in', AppColors.baseBlackColor, 
-                () {
+                child: MyButtonWidget('Sign in', AppColors.baseBlackColor, () {
                   PageRouting.goToNextPage(
                     context,
                     HomePage(),
