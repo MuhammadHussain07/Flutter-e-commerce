@@ -36,7 +36,7 @@ class _DropButtonState extends State<DropButton> {
               .toList(),
           onChanged: (value) {
             setState(() {
-              widget.ratingController = value!;
+              widget.ratingController = value;
             });
           }),
     );

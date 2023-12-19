@@ -1,3 +1,4 @@
+import 'package:custom_top_navigator/custom_scaffold.dart';
 import 'package:e_commere/appColors/app_colors.dart';
 import 'package:e_commere/screens/homePage/home_page.dart';
 import 'package:flutter/material.dart';
@@ -41,43 +42,48 @@ class _MyBottomBarState extends State<MyBottomBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('BottomNavigationBar Sample'),
-      // ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        type: BottomNavigationBarType.fixed,
-        unselectedItemColor: AppColors.baseGrey40Color,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_border),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: '',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: AppColors.baseDarkPinkColor,
-        onTap: _onItemTapped,
+    return CustomScaffold(
+      children: _widgetOptions,
+      onItemTap: _onItemTapped,
+      scaffold: Scaffold(
+        // appBar: AppBar(
+        //   title: const Text('BottomNavigationBar Sample'),
+        // ),
+        body: Center(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
+          unselectedItemColor: AppColors.baseGrey40Color,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.grid_view),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart_outlined),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border),
+              label: '',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: '',
+            ),
+          ],
+          currentIndex: _selectedIndex,
+          selectedIconTheme: IconThemeData(color: AppColors.baseDarkPinkColor),
+          // selectedItemColor: AppColors.baseDarkPinkColor,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }

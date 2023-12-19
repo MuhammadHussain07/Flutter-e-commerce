@@ -270,7 +270,10 @@ class HomePage extends StatelessWidget {
                             data.productName,
                             data.productPrice,
                             data.productOldPrice,
-                            () {},
+                            () {
+                              PageRouting.goToNextPage(
+                                  context, DetailScreen(data));
+                            },
                           );
                         }),
                   )
