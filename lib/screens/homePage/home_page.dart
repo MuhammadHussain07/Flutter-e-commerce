@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_commere/appColors/app_colors.dart';
 import 'package:e_commere/data/home_page_data.dart';
+import 'package:e_commere/detailScreen/detail_screen.dart';
+import 'package:e_commere/routes/routes.dart';
 import 'package:e_commere/screens/tab_bar_data.dart';
 import 'package:e_commere/styles/home_screen_styles.dart';
 import 'package:e_commere/svgimages/svg_images.dart';
@@ -220,8 +222,10 @@ class HomePage extends StatelessWidget {
                               data.productImage,
                               data.productName,
                               data.productPrice,
-                              data.productOldPrice,
-                              () {});
+                              data.productOldPrice, () {
+                            PageRouting.goToNextPage(
+                                context, DetailScreen(data));
+                          });
                         }),
                   ),
                   Divider(
